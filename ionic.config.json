@@ -1,0 +1,7 @@
+{
+  "name": "Primera-vez-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
