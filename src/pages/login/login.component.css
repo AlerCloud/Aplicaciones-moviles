@@ -1,0 +1,41 @@
+.centrar{
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.boton{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moverboton{transform: translateX(-50%) translateY(-50%);
+    top: 75%;
+    left: 50%;
+    position: absolute;
+
+}
+
+.moverboton2{transform: translateX(-50%) translateY(-50%);
+    top: 55%;
+    left: 50%;
+    position: absolute;
+
+}
+
+.background{
+    --background: url(img/fondo2.jpg ) 0 0/100% 100% no-repeat;
+}
+
+.colorcard{
+    background-color:#96C0C6  ;
+    box-shadow: none;
+}
+.letra{
+    font-size: 64px;
+    font-family: fantasy;
+    color: lightseagreen;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    
+}
