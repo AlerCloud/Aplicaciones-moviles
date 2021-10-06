@@ -1,0 +1,24 @@
+
+.imagen{
+    height: 160px;
+    width: 150px;
+}
+
+ion-toolbar{
+    --background: #7ED2D5 ;
+    
+}
+
+ion-card{
+    --background: <img  src="assets/img/fondoavatar.jpg"> ;
+}
+
+.circulo{
+    width:450px;
+    height:300px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.background{
+    --background: url(/assets/img/fondoavatar.jpg) 0 0/100% 100% no-repeat;
+}

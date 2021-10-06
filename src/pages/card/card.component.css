@@ -3,7 +3,7 @@
 }
 
 .tamaño{
-    font-size: 30px;
+    font-size: 21px;
  
     
 }
@@ -26,8 +26,8 @@
 }
 
 .moverletra{transform: translateX(-50%) translateY(-50%);
-    top: 10%;
-    left: 23%;
+    top: 15%;
+    left: 26%;
     position: absolute;
 
 }

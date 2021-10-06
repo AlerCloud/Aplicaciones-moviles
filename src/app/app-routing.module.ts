@@ -3,7 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CardComponent } from 'src/pages/card/card.component';
 import { LoginComponent } from 'src/pages/login/login.component';
 import { MainComponent } from 'src/pages/main/main.component';
-import { NoteComponent } from 'src/pages/note/note.component';
+import { PerfilComponent } from 'src/pages/perfil/perfil.component';
+import { WelcomeComponent } from 'src/pages/welcome/welcome.component';
 import { RegisterComponent } from 'src/pages/register/register.component';
 
 
@@ -20,12 +21,16 @@ const routes: Routes = [
     path: 'Menu-Principal',
     component: MainComponent
   }, {
-    path: 'Notas',
-    component: NoteComponent
+    path: 'perfil',
+    component: PerfilComponent
   },
   {
     path: 'card',
     component: CardComponent
+  },
+  {
+    path: 'welcome',
+    component: WelcomeComponent
   }
 
   
