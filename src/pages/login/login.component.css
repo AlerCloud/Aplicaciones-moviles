@@ -25,17 +25,17 @@
 }
 
 .background{
-    --background: url(img/fondo2.jpg ) 0 0/100% 100% no-repeat;
+    --background: url(src/assets/img/fondo2.jpg) 0 0/100% 100% no-repeat;
 }
 
 .colorcard{
     background-color:#96C0C6  ;
     box-shadow: none;
 }
-.letra{
+.titulo{
     font-size: 64px;
     font-family: fantasy;
-    color: lightseagreen;
+    color:#7ED2D5 ;
     text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
     
 }

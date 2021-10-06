@@ -1,0 +1,33 @@
+.background{
+    --background: url(src/assets/img/fondo2.jpg) 0 0/100% 100% no-repeat;
+}
+
+.tamaño{
+    font-size: 30px;
+ 
+    
+}
+
+.moverboton{transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 61%;
+    position: absolute;
+
+}
+.estrella{
+    color: #F5F229 ;
+
+  }
+.letra{
+
+    font-size: 20px;
+    font-family:initial;
+    color: black;
+}
+
+.moverletra{transform: translateX(-50%) translateY(-50%);
+    top: 10%;
+    left: 23%;
+    position: absolute;
+
+}
