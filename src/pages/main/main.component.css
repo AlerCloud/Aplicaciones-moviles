@@ -1,0 +1,16 @@
+.background{
+    --background: url(src/assets/img/fondo6.jpg ) 0 0/100% 100% no-repeat;
+}
+.tamaño{
+    font-size: 30px;
+}
+
+ion-toolbar{
+  --background: #7ED2D5 ;
+  
+}
+
+ion-tab-bar{
+  --background: #7ED2D5 ;
+  
+}

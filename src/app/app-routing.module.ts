@@ -18,7 +18,7 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'Menu-Principal',
+    path: 'main',
     component: MainComponent
   }, {
     path: 'perfil',
