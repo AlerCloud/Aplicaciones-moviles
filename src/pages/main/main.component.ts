@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { AlertController, MenuController } from "@ionic/angular";
 import { __await } from "tslib";
 
+
  @Component({
      selector: 'main',
      templateUrl: './main.component.html',
