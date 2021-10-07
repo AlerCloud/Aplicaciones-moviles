@@ -14,3 +14,11 @@ ion-tab-bar{
   --background: #7ED2D5 ;
   
 }
+
+.moverletra{
+  transform: translateX(38%) translateY(-70%);
+  top: 50%;
+  left: 50%;
+ 
+}
+

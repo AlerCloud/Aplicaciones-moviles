@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { LoadingController } from "@ionic/angular";
+import { AlertController } from "@ionic/angular";
+import { __await } from "tslib";
 
 @Component({
     selector: 'login',
@@ -9,7 +11,7 @@ import { LoadingController } from "@ionic/angular";
 export class LoginComponent implements OnInit{ 
 
 
-    constructor(private loadingCtrl: LoadingController){}
+    constructor(private loadingCtrl: LoadingController , public alertController: AlertController){}
 
     ngOnInit(){
         this.presentLoading();
@@ -23,6 +25,18 @@ export class LoginComponent implements OnInit{
         await loading.present();
 
       }
+    
+      
+      async presentAlertMultipleButtons() {
+         const alert = await this.alertController.create({
+           cssClass: 'my-custom-class',
+           header: '¿Quiere permitir acceso a la camara del dispositivo?',      
+           buttons: ['Cancelar', 'Ok']
+         });
+     
+         await alert.present();
+       }
+  
 
 
 }

@@ -1,12 +1,21 @@
 <ion-content padding class="background" > 
     <!--CARD-->
-    <ion-card >
-    <ion-card-header>
+    <ion-toolbar >
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="main"></ion-back-button>    
+      </ion-buttons>
+     
+      <ion-title class="letratool" >Punto limpio: Lo Blanco </ion-title>
+    </ion-toolbar>
+
+    <ion-card >   
+      <ion-card-header>
     <img src="assets/img/reciclaje.jpg">
     </ion-card-header>
   
     <ion-card-content>
         <!--estrellas y boton-->
+
         <ion-grid >
             <ion-row>
                 <ion-col size="1" >
@@ -49,7 +58,7 @@
                 </ion-col>
 
                 <ion-col>               
-                    <ion-button  class="moverboton" color="danger" shape="round" (click)="presentAlertMultipleButtons()" >inhabilitado
+                    <ion-button  class="moverboton" color="danger" shape="round" (click)="presentAlertMultipleButtons()" >Reportar
                     </ion-button>       
                 </ion-col>
                 
@@ -115,6 +124,7 @@
                         <ion-icon name="person-outline"class="tamaño" ></ion-icon>
                     </ion-avatar>
                     <ion-label>
+                      <h2>Usuario 3</h2>
                       <h2 class="estrella" ><ion-icon name="star"></ion-icon>
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -138,7 +148,7 @@
                     <ion-icon name="person-outline"class="tamaño" ></ion-icon>
                 </ion-avatar>
                 <ion-label>
-                  <h2>Usuario 3</h2>
+                  <h2>Usuario 4</h2>
                   <h3 class="estrella"><ion-icon name="star"></ion-icon>
                     <ion-icon name="star" ></ion-icon>
                     <ion-icon name="star-outline" ></ion-icon>

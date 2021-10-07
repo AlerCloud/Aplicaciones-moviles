@@ -1,0 +1,45 @@
+ion-toolbar{
+    --background: #dae637 ;
+    
+}
+
+.letratool{      padding: 10px;
+    font-size: 20px;
+    font-family:monospace;
+    color:#f0f0f0 ;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    
+}
+
+.mover{transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 42%;
+    position: absolute;
+
+}
+
+.mover2{transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left:52%;
+    position: absolute;
+
+}
+
+.mover3{transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 38%;
+    position: absolute;
+
+}
+.mover4{transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 43%;
+    position: absolute;
+
+}
+.mover5{transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 40%;
+    position: absolute;
+
+}

@@ -1,30 +1,97 @@
 <ion-content padding class="background">
-    <ion-header >
-        <ion-toolbar >
-          <ion-title  class="ion-text-center" color="dark">Menu</ion-title >
+   <!--TOOLBAR-->
+    <ion-header  >
+        <ion-toolbar > 
+         
+          <ion-buttons>
+            
+            <ion-menu-button side="start"></ion-menu-button>
+          </ion-buttons>
+          <ion-title class="moverletra" color="dark">Menu</ion-title >         
         </ion-toolbar>
-      </ion-header>
-    
+     </ion-header>
+
+      <!--MENU-->
+      <ion-menu side="start" menuId="first" contentId="main">
+        <ion-header>
+          <ion-toolbar >
+            <ion-title>Opciones</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list  >            
+            <ion-item>
+              <ion-icon name="battery-half-outline"></ion-icon>
+              <ion-label id="pad">Ahorro de bateria</ion-label>
+              <ion-toggle name style="object-position: right;"></ion-toggle>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="location"></ion-icon>
+              <ion-label id="pad">Uso de GPS</ion-label>
+              <ion-toggle checked style="object-position: right;"></ion-toggle>              
+            </ion-item>
+            <ion-item>
+              <ion-icon name="location-outline"></ion-icon>
+              <ion-label id="pad">GPS activo en deshuso</ion-label>
+              <ion-toggle style="object-position: right;"></ion-toggle>                
+            </ion-item>
+            <ion-item>
+              <ion-icon name="notifications"></ion-icon>
+              <ion-label id="pad">Mostrar notificaciones</ion-label>
+              <ion-toggle checked style="object-position: right;"></ion-toggle>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="wifi"></ion-icon>
+              <ion-label id="pad">Uso de datos moviles</ion-label>
+              <ion-toggle style="object-position: right;"></ion-toggle>
+            </ion-item>
+            <ion-item>              
+              <ion-label id="pad">Condiciones de uso</ion-label>              
+            </ion-item>
+            <ion-item>              
+              <ion-label id="pad">Restricciones de ubicacion</ion-label>              
+            </ion-item>
+            <ion-item>              
+              <ion-label id="pad">Eliminar cuenta</ion-label> 
+              <ion-icon name="trash" style="object-position: right;"></ion-icon>             
+            </ion-item>
+            <ion-item>              
+              <ion-label id="pad">Version de APP 1.00</ion-label>              
+            </ion-item>
+           
+          </ion-list>
+          
+        </ion-content>
+      </ion-menu>
+
+      
+
+       <!--TABS-->
      <ion-tabs >    
         <ion-tab-bar slot="bottom" >
           <ion-tab-button  href="perfil">
             <ion-icon name="person"color="dark"></ion-icon>
           </ion-tab-button>
-          <ion-tab-button tab="ubicacion">
+          <ion-tab-button href="main">
             <ion-icon name="location"color="dark"></ion-icon>
           </ion-tab-button>
-          <ion-tab-button tab="favoritos">
+          <ion-tab-button   href="fav">
             <ion-icon name="star"color="dark"></ion-icon>
           </ion-tab-button>
-          <ion-tab-button tab="camara">
-            <ion-icon name="camera"color="dark"></ion-icon>
+          <ion-tab-button  (click)="presentAlertMultipleButtons()" >
+            <ion-icon  name="camera"color="dark"  ></ion-icon>
           </ion-tab-button>
         </ion-tab-bar>
       </ion-tabs>
+       <!--ICONOS-->
       <ion-grid>
           <ion-row>
               <ion-col size="10" offset="10" class="tamaño">
+                <ion-buttons>
+                <ion-button (click)="AlertMultipleButtons()" >  
                 <ion-icon name="help-circle" color="danger"></ion-icon>
+              </ion-button>
+            </ion-buttons>
               </ion-col>
               <ion-col size="10" offset="3" class="tamaño">
                 <ion-button size="small" color="success" shape="round" >
@@ -42,7 +109,7 @@
                   </ion-button>
               </ion-col>
               <ion-col size="10" offset="2" class="tamaño">
-                <ion-button size="small" color="success" shape="round" >
+                <ion-button size="small" color="success" shape="round"  href="card2"  >
                   <ion-icon name="trash"color="dark"></ion-icon>
               </ion-button>
               </ion-col>
@@ -51,7 +118,7 @@
               <ion-col size="10" offset="11" class="tamaño">
               </ion-col>
               <ion-col size="10" offset="5" class="tamaño" >
-                <ion-button size="small" color="danger" shape="round" >
+                <ion-button size="small" color="danger" shape="round" href="card3" >
                   <ion-icon name="trash"color="dark"></ion-icon>
               </ion-button>
               </ion-col>
@@ -69,4 +136,5 @@
               </ion-col>
           </ion-row>
       </ion-grid>
+      
 </ion-content>

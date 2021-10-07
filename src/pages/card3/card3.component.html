@@ -1,0 +1,171 @@
+<ion-content padding class="background" > 
+    <ion-toolbar >
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="main"></ion-back-button>
+      </ion-buttons>
+  
+      <ion-title class="letratool" >Punto limpio: Infanteria </ion-title>
+    </ion-toolbar>
+      <!--CARD-->
+      <ion-card >
+      <ion-card-header>
+  
+      <img src="assets/img/reciclaje3.jpg">
+      </ion-card-header>
+    
+      <ion-card-content>
+          <!--estrellas y boton-->
+          <ion-grid >
+              <ion-row>
+                  <ion-col size="1" >
+                      <ion-buttons> 
+                        <ion-button class="tamaño">
+                          <ion-icon name="star" class="estrella"  ></ion-icon>
+                        </ion-button>
+                      </ion-buttons>
+                  </ion-col>
+                  <ion-col size="1">
+                    <ion-buttons> 
+                      <ion-button class="tamaño" >
+                        <ion-icon name="star" class="estrella"  ></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-col>
+  
+                  <ion-col size="1">
+                    <ion-buttons> 
+                      <ion-button class="tamaño" >
+                        <ion-icon name="star" class="estrella"  ></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-col >
+  
+                  <ion-col size="1">
+                    <ion-buttons> 
+                      <ion-button class="tamaño" >
+                        <ion-icon name="star" class="estrella"  ></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-col>
+                  
+                  <ion-col size="1">
+                    <ion-buttons> 
+                      <ion-button class="tamaño" >
+                        <ion-icon name="star-outline" class="estrella"  ></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-col>
+  
+                  <ion-col>               
+                      <ion-button  class="moverboton" color="danger" shape="round" (click)="presentAlertMultipleButtons()" >Reportar
+                      </ion-button>       
+                  </ion-col>
+                  
+              </ion-row>
+              <ion-row>
+                  <ion-col class="letra">
+                      <p class="moverletra" >Califica el punto!</p>
+                  </ion-col>
+              </ion-row>
+  
+              <!--COMENTARIOS-->
+          <ion-row>  
+                  <ion-col>
+                          <ion-list>
+                            <ion-item>
+                              <ion-avatar>
+                                  <ion-icon name="person-outline"class="tamaño"  ></ion-icon>
+                              </ion-avatar>
+                              <ion-label>
+                                <h2>Usuario 1</h2>
+                                <h3 class="estrella" >
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star" ></ion-icon>
+                                  <ion-icon name="star" ></ion-icon>
+                                  <ion-icon name="star" ></ion-icon>
+                                  <ion-icon name="star" ></ion-icon>
+                                </h3>
+                                <p>ta weno.</p>
+                              </ion-label>
+                            </ion-item>
+          
+                          </ion-list>
+                       
+                  </ion-col>
+                  <ion-col>
+                  
+                      <ion-list>
+                
+                        <ion-item>
+                          <ion-avatar>
+                              <ion-icon name="person-outline" class="tamaño"></ion-icon>
+                          </ion-avatar>
+                          <ion-label>
+                            <h2>Usuario 2</h2>
+                            <h3 class="estrella"><ion-icon name="star"></ion-icon>
+                              <ion-icon name="star" ></ion-icon>
+                              <ion-icon name="star" ></ion-icon>
+                              <ion-icon name="star" ></ion-icon>
+                              <ion-icon name="star-outline" ></ion-icon></h3>
+                            <p>Messirve.</p>
+                          </ion-label>
+                        </ion-item>
+      
+                      </ion-list>
+                   
+              </ion-col>
+              <ion-col>
+                  
+                  <ion-list>
+            
+                    <ion-item>
+                      <ion-avatar>
+                          <ion-icon name="person-outline"class="tamaño" ></ion-icon>
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Usuario 3</h2>
+                        <h3 class="estrella" ><ion-icon name="star"></ion-icon>
+                          <ion-icon name="star" ></ion-icon>
+                          <ion-icon name="star" ></ion-icon>
+                          <ion-icon name="star-outline" ></ion-icon>
+                          <ion-icon name="star-outline" ></ion-icon></h3>
+                        
+                        <p>Pasable.</p>
+                      </ion-label>
+                    </ion-item>
+  
+                  </ion-list>
+               
+          </ion-col>
+  
+          <ion-col>
+                  
+              <ion-list>
+        
+                <ion-item>
+                  <ion-avatar>
+                      <ion-icon name="person-outline"class="tamaño" ></ion-icon>
+                  </ion-avatar>
+                  <ion-label>
+                    <h2>Usuario 4</h2>
+                    <h3 class="estrella"><ion-icon name="star"></ion-icon>
+                      <ion-icon name="star" ></ion-icon>
+                      <ion-icon name="star-outline" ></ion-icon>
+                      <ion-icon name="star-outline" ></ion-icon>
+                      <ion-icon name="star-outline" ></ion-icon>
+                      </h3>
+                    <p>k dcirt.</p>
+                  </ion-label>
+                </ion-item>
+  
+              </ion-list>
+           
+          </ion-col>
+                  
+          </ion-row>
+          </ion-grid>
+          
+      </ion-card-content>
+    </ion-card>
+   
+  </ion-content>

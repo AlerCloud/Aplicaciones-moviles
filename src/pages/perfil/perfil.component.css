@@ -26,3 +26,10 @@ ion-tab-bar{
     --background: #7ED2D5 ;
     
 }
+.letratool{      padding: 10px;
+    font-size: 20px;
+    font-family:monospace;
+    color:#f0f0f0 ;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    
+}
