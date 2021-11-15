@@ -11,6 +11,7 @@ import { Card2Component } from 'src/pages/card2/card2.component';
 import { Card3Component } from 'src/pages/card3/card3.component';
 
 
+
 const routes: Routes = [
   {
     path: '',
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'fav',
     component: FavComponent
+  },
+  {
+    path: 'dato',
+    loadChildren: () => import('./dato/dato.module'). then( m => m.DatoModule)
   }
 
   

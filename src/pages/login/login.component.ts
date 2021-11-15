@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit{
     async presentLoading() {
         const loading = await this.loadingCtrl.create({
           message: 'Espere un momento...',
-          duration: 2000
+          duration: 1000
         });
         await loading.present();
 

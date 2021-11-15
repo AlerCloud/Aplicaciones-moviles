@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
+import { FormsModule } from '@angular/forms'
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from 'src/pages/login/login.component';
@@ -15,13 +15,15 @@ import { Card2Component } from 'src/pages/card2/card2.component';
 import { Card3Component } from 'src/pages/card3/card3.component';
 import { WelcomeComponent } from 'src/pages/welcome/welcome.component';
 import { FavComponent } from 'src/pages/favorito/fav.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
-  declarations: [AppComponent , LoginComponent , MainComponent, PerfilComponent, 
+  declarations: [AppComponent ,MenuComponent, LoginComponent , MainComponent, PerfilComponent, 
                 RegisterComponent, CardComponent, WelcomeComponent, FavComponent,
                 Card2Component, Card3Component],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  exports: [MenuComponent],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

@@ -1,7 +1,8 @@
 {
   "name": "Primera-vez-ionic",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

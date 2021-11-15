@@ -11,6 +11,8 @@ import { __await } from "tslib";
  
 
  export class MainComponent {
+
+ 
      
 
     constructor(public alertController: AlertController, private menu: MenuController ){
@@ -39,6 +41,7 @@ import { __await } from "tslib";
       toggleMenu(){
         this.menu.toggle();
 
+      
       
 }
 

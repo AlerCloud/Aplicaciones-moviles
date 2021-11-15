@@ -1,0 +1,16 @@
+.background{
+    --background: url(src/assets/img/fondo2.jpg) 0 0/100% 100% no-repeat;
+}
+.centrar{
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.titulo{
+    font-size: 64px;
+    font-family: fantasy;
+    color:#7ED2D5 ;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    
+}
