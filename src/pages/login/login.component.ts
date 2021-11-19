@@ -20,23 +20,13 @@ export class LoginComponent implements OnInit{
     async presentLoading() {
         const loading = await this.loadingCtrl.create({
           message: 'Espere un momento...',
-          duration: 1000
+          duration: 500
         });
         await loading.present();
 
       }
     
-      
-      async presentAlertMultipleButtons() {
-         const alert = await this.alertController.create({
-           cssClass: 'my-custom-class',
-           header: '¿Quiere permitir acceso a la camara del dispositivo?',      
-           buttons: ['Cancelar', 'Ok']
-         });
-     
-         await alert.present();
-       }
-  
+    
 
 
 }

@@ -1,4 +1,4 @@
-<ion-content padding class="background">
+<ion-content >
    <!--TOOLBAR-->
     <ion-header  >
         <ion-toolbar > 
@@ -7,9 +7,32 @@
             
             <ion-menu-button side="start"></ion-menu-button>
           </ion-buttons>
-          <ion-title class="moverletra" color="dark">Menu</ion-title >         
+          <ion-title   class="moverletra" color="dark"  >  RECYCLOP</ion-title >         
         </ion-toolbar>
+         <google-map width="100%" height="80vh" 
+           [center]="miPosicion"
+           [options]="opcionesDeMapa" 
+           [zoom]="zoom"
+           (mapClick)="crearMarca($event)"
+           >
+           <map-marker 
+           *ngFor="let marca of marcas"
+           [position]="marca.posicion"
+           [title]="marca.title"
+           [label]="marca.etiqueta"
+           [options]="marca.opciones"
+           >  
+          
+           </map-marker>
+          </google-map>
      </ion-header>
+     
+   
+          
+
+           
+      
+      
 
       <!--MENU-->
      
@@ -33,57 +56,5 @@
         </ion-tab-bar>
       </ion-tabs>
        <!--ICONOS-->
-      <ion-grid>
-          <ion-row>
-              <ion-col size="10" offset="10" class="tamaño">
-                <ion-buttons>
-                <ion-button (click)="AlertMultipleButtons()" >  
-                <ion-icon name="help-circle" color="danger"></ion-icon>
-              </ion-button>
-            </ion-buttons>
-              </ion-col>
-              <ion-col size="10" offset="3" class="tamaño">
-                <ion-button size="small" color="success" shape="round" >
-                  <ion-icon name="trash"color="dark"></ion-icon>
-              </ion-button>
-              </ion-col>
-              <ion-col size="10" offset="7" class="tamaño">
-                <ion-button size="small" color="danger" shape="round" >
-                  <ion-icon name="trash"color="dark"></ion-icon>
-              </ion-button>
-              </ion-col>
-              <ion-col size="10" offset="4" class="tamaño">
-                  <ion-button size="small" color="danger" shape="round" href="card">
-                      <ion-icon name="trash"color="dark"></ion-icon>
-                  </ion-button>
-              </ion-col>
-              <ion-col size="10" offset="2" class="tamaño">
-                <ion-button size="small" color="success" shape="round"  href="card2"  >
-                  <ion-icon name="trash"color="dark"></ion-icon>
-              </ion-button>
-              </ion-col>
-              <ion-col size="10" offset="3" class="tamaño"> 
-              </ion-col>
-              <ion-col size="10" offset="11" class="tamaño">
-              </ion-col>
-              <ion-col size="10" offset="5" class="tamaño" >
-                <ion-button size="small" color="danger" shape="round" href="card3" >
-                  <ion-icon name="trash"color="dark"></ion-icon>
-              </ion-button>
-              </ion-col>
-              <ion-col size="10" offset="10" class="tamaño" >
-                <ion-button size="small" color="success" shape="round" >
-                  <ion-icon name="trash"color="dark"></ion-icon>
-              </ion-button>
-              </ion-col>
-              <ion-col size="10" offset="6" class="tamaño">
-                <ion-button size="small" color="success" shape="round" >
-                  <ion-icon name="trash"color="dark"></ion-icon>
-              </ion-button>
-              </ion-col>
-              <ion-col size="10" offset="2" class="tamaño">
-              </ion-col>
-          </ion-row>
-      </ion-grid>
-      
+     
 </ion-content>

@@ -2,58 +2,18 @@
   "persona": [
     {
       "nombre": "asdad",
-      "email": "asdasdddddddddd",
-      "contrasena": "dddddddd",
+      "email": "",
+      "contrasena": "",
+      "contrasena2": "",
       "sexo": "Masculino",
       "id": 1
     },
     {
       "nombre": "",
-      "email": "",
-      "contrasena": "asd",
-      "contrasena2": "asd",
-      "sexo": "Masculino",
-      "id": 2
-    },
-    {
-      "nombre": "",
-      "email": "",
-      "contrasena": "",
-      "contrasena2": "",
-      "sexo": "Masculino",
-      "id": 3
-    },
-    {
-      "nombre": "",
-      "email": "asdads",
-      "contrasena": "asd",
-      "contrasena2": "",
-      "sexo": "Masculino",
-      "id": 4
-    },
-    {
-      "nombre": "",
-      "email": "",
-      "contrasena": "",
-      "contrasena2": "",
-      "sexo": "Masculino",
-      "id": 5
-    },
-    {
-      "nombre": "",
       "email": "asdasd",
-      "contrasena": "",
-      "contrasena2": "asdasd",
-      "sexo": "Masculino",
-      "id": 6
-    },
-    {
-      "nombre": "alvaro",
-      "email": "alskda",
-      "contrasena": "asdasd",
-      "contrasena2": "asdasd",
-      "sexo": "Masculino",
-      "id": 7
+      "contrasena": "asd",
+      "edad": "",
+      "id": 2
     }
   ]
 }

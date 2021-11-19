@@ -1,24 +1,32 @@
-.background{
-    --background: url(src/assets/img/fondo6.jpg ) 0 0/100% 100% no-repeat;
-}
 .tamaño{
     font-size: 30px;
 }
 
 ion-toolbar{
-  --background: #7ED2D5 ;
+  --background: #6ed4cc;
   
 }
 
 ion-tab-bar{
-  --background: #7ED2D5 ;
+  --background: #6ed4cc;
   
 }
 
 .moverletra{
-  transform: translateX(38%) translateY(-70%);
+  transform: translateX(32%) translateY(-80%);
   top: 50%;
   left: 50%;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
  
 }
 
+.map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+.je {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

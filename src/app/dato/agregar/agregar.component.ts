@@ -13,8 +13,8 @@ export class AgregarComponent implements OnInit {
     nombre: '',
     email: '',
     contrasena: '',
-    contrasena2:'',
-    sexo: 'Masculino'
+    edad:''
+
   }
   private servicio: DatosService
   constructor(datoServicio: DatosService) {
@@ -35,7 +35,7 @@ export class AgregarComponent implements OnInit {
     this.servicio.ListarDatos()
     .subscribe( respuesta => {
       console.log(respuesta)
-      
+
     })
   }
 

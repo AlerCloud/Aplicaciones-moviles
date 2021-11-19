@@ -5,7 +5,6 @@ export interface IDato {
     nombre: string;
     email: string;
     contrasena: string;
-    contrasena2: string;
-    sexo: "Masculino" | "Femenino";
+    edad: string;
 
 }

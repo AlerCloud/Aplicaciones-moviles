@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { AlertController, MenuController } from "@ionic/angular";
 import { __await } from "tslib";
 
@@ -10,7 +10,7 @@ import { __await } from "tslib";
  })
  
 
- export class MainComponent {
+ export class MainComponent implements OnInit {
 
  
      
@@ -44,6 +44,58 @@ import { __await } from "tslib";
       
       
 }
+  public zoom =18;
+  public opcionesDeMapa : google.maps.MapOptions = {
+    zoomControl: true,
+    scrollwheel: true,
+  
+    maxZoom: 14,
+    minZoom: 2,
+    clickableIcons: true,
+    
+
+
+  };
+  public marcas = [];
+  public miPosicion: google.maps.LatLngLiteral = {
+    lat:-0, 
+    lng:-0,
+  };
+  ngOnInit(): void {
+    window.navigator.geolocation.getCurrentPosition((posicion) =>{
+      
+      this.miPosicion = {
+        lat: posicion.coords.latitude,
+        lng:posicion.coords.longitude,
+      };
+
+      this.marcas.push({
+        posicion: this.miPosicion,
+      });
+
+    });
+       
+
+    
+  
+  }
+   
+  public crearMarca(evento: google.maps.MapMouseEvent){
+    const posicion: google.maps.LatLngLiteral = evento.latLng.toJSON();
+    this.marcas.push({
+      posicion: posicion,
+      title: "soy un punto Ecologico" + this.marcas.length + 1,
+      etiqueta: {
+        color: "blue",
+        text: "Punto Ecologico" + this.marcas.length + 1
+      },
+      informacion: "soy informacion" + this.marcas.length + 1,
+      opciones: {
+        
+        Animation: google.maps.Animation.BOUNCE
+      }
+    });
+    }
 
 
 

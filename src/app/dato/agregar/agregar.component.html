@@ -1,99 +1,77 @@
 <ion-content padding class="background" >
     
-  <div class ="centrar"> 
-   <ion-grid class="completa">
-       <ion-row class="completa ion-align-items-center">
-           <ion-col>
-               <ion-card (ngSubmit)= "agregarDato()">
-                  
-                   <ion-card-content (ngSubmit)= "agregarDato()" >
-                       <ion-grid>
-                           <ion-row>
-                               <ion-col>
-                                   <ion-item>
-                                       <ion-label position="floating">
-                                           Ingrese su usuario
-                                       </ion-label>
-                                       <ion-input  type="text" required [(ngModel)]="dato.nombre"ngDefaultControl ></ion-input>
-                                   </ion-item>
-                               </ion-col>
-                           </ion-row>
-                           <ion-row>
-                               <ion-col>
-                                   <ion-item>
-                                       <ion-label position="floating">
-                                           Ingrese su email
-                                       </ion-label>
-                                       <ion-input  type="text" required [(ngModel)]="dato.email"ngDefaultControl ></ion-input>
-                                   </ion-item>
-                               </ion-col>
-                           </ion-row>
-                           <ion-row>
-                               <ion-col>
-                                   <ion-item>
-                                       <ion-label position="floating">
-                                           Ingrese su contraseña
-                                       </ion-label>
-                                       <ion-input type="password" required [(ngModel)]="dato.contrasena" ngDefaultControl></ion-input>
-                                   </ion-item>
-                               </ion-col>
-                           </ion-row>
-                           <ion-row>
-                            <ion-col>
-                                <ion-item>
-                                    <ion-label position="floating">
-                                        Confirme Contraseña
-                                    </ion-label>
-                                    <ion-input type="password" required [(ngModel)]="dato.contrasena2" ngDefaultControl></ion-input>
-                                </ion-item>
-                            </ion-col>
-                        </ion-row>
-                           <ion-row >
-                               <ion-col>
-                                   <ion-list>
-                                       <ion-radio-group   value="biff" >
-                                         <ion-list-header>
-                                           <ion-label>SEXO</ion-label>
-                                         </ion-list-header>
-                                     
-                                         <ion-item >
-                                           <ion-label>Masculino</ion-label>
-                                           <ion-radio slot="start" value="biff"  ></ion-radio>
-                                         </ion-item>
-                                     
-                                         <ion-item>
-                                           <ion-label>Femenino</ion-label>
-                                           <ion-radio slot="start" value="griff" ></ion-radio>
-                                         </ion-item>
-                                     
-                                        
-                                       </ion-radio-group>
-                                     </ion-list>
-                               </ion-col>
-                           </ion-row>
+    <div class ="centrar"> 
+     <ion-grid class="completa">
+         <ion-row class="completa ion-align-items-center">
+             <ion-col>
+                 <ion-card (ngSubmit)= "agregarDato()">
+                    
+                     <ion-card-content (ngSubmit)= "agregarDato()" >
+                         <ion-grid>
+                             <ion-row>
+                                 <ion-col>
+                                     <ion-item>
+                                         <ion-label position="floating">
+                                             Ingrese su usuario
+                                         </ion-label>
+                                         <ion-input  type="text" required [(ngModel)]="dato.nombre"ngDefaultControl ></ion-input>
+                                     </ion-item>
+                                 </ion-col>
+                             </ion-row>
+                             <ion-row>
+                                 <ion-col>
+                                     <ion-item>
+                                         <ion-label position="floating">
+                                             Ingrese su email
+                                         </ion-label>
+                                         <ion-input  type="text" required [(ngModel)]="dato.email"ngDefaultControl ></ion-input>
+                                     </ion-item>
+                                 </ion-col>
+                             </ion-row>
+                             <ion-row>
+                                 <ion-col>
+                                     <ion-item>
+                                         <ion-label position="floating">
+                                             Ingrese su contraseña
+                                         </ion-label>
+                                         <ion-input type="password" required [(ngModel)]="dato.contrasena" ngDefaultControl></ion-input>
+                                     </ion-item>
+                                 </ion-col>
+                             </ion-row>
+                             <ion-row>
+                              <ion-col>
+                                  <ion-item>
+                                      <ion-label position="floating">
+                                          edad
+                                      </ion-label>
+                                      <ion-input type="number" required [(ngModel)]="dato.edad" ngDefaultControl></ion-input>
+                                  </ion-item>
+                              </ion-col>
+                          </ion-row>
                           
-                           <ion-row>
-                               <ion-col>
-                                   <ion-button (click)="agregarDato()"  expand="block"color="success" shape="round"  href="">
-                                       Registrarse
-                                   </ion-button>
-                               </ion-col>
-                           </ion-row>
-                           <ion-row>
-                               <ion-col class="ion-text-center">
-                                   <ion-router-link
-                                       href=""
-                                   >
-                                       ¿Ya tienes cuenta?
-                                   </ion-router-link>
-                               </ion-col>
-                           </ion-row>
-                       </ion-grid>
-                   </ion-card-content>
-               </ion-card>
-           </ion-col>
-       </ion-row>
-      
-     </ion-grid>
-   </div> 
-</ion-content>
+                            
+                             <ion-row>
+                                 <ion-col>
+                                     <ion-button (click)="agregarDato()"  expand="block"color="success" shape="round"  href="">
+                                         Registrarse
+                                     </ion-button>
+                                 </ion-col>
+                             </ion-row>
+                             <ion-row>
+                                 <ion-col class="ion-text-center">
+                                     <ion-router-link
+                                         href=""
+                                     >
+                                         ¿Ya tienes cuenta?
+                                     </ion-router-link>
+                                 </ion-col>
+                             </ion-row>
+                         </ion-grid>
+                     </ion-card-content>
+                 </ion-card>
+             </ion-col>
+         </ion-row>
+        
+       </ion-grid>
+     </div> 
+  </ion-content>

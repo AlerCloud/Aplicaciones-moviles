@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {HttpClientJsonpModule} from '@angular/common/http'
 
+
+
 import { DatoRoutingModule } from './dato-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatosService } from '../servicio/datos.service';
 import { AgregarComponent } from './agregar/agregar.component';
 
@@ -14,7 +16,10 @@ import { AgregarComponent } from './agregar/agregar.component';
     CommonModule,
     DatoRoutingModule,
     FormsModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    ReactiveFormsModule,
+   
+  
   ],
   providers:[
   DatosService
