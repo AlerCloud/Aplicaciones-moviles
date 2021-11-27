@@ -1,18 +1,17 @@
 {
   "persona": [
     {
-      "nombre": "asdad",
-      "email": "",
-      "contrasena": "",
-      "contrasena2": "",
-      "sexo": "Masculino",
-      "id": 1
-    },
-    {
       "nombre": "",
       "email": "asdasd",
       "contrasena": "asd",
       "edad": "",
+      "id": 1
+    },
+    {
+      "nombre": "asda",
+      "email": "asdasd",
+      "contrasena": "asdasd",
+      "edad": 1231,
       "id": 2
     }
   ]

@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit{
     constructor(private loadingCtrl: LoadingController , public alertController: AlertController){}
 
     ngOnInit(){
+        
         this.presentLoading();
     }
 
@@ -26,7 +27,23 @@ export class LoginComponent implements OnInit{
 
       }
     
+      async presentAlertMultipleButtons() {
+        const alert = await this.alertController.create({
+          cssClass: 'my-custom-class',
+          header: 'Escribe tu correo para recuperar tu contraseña.',
+          inputs:[
+            {
+              name: 'txtNombre',
+              type: 'email',
+              placeholder: 'Email'
+            }
+          ],
+          
+          buttons: ['Cancelar', 'Ok']
+        });
     
+        await alert.present();
+      }
 
 
 }

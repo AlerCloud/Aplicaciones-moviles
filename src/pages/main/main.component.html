@@ -1,60 +1,36 @@
-<ion-content >
+
    <!--TOOLBAR-->
-    <ion-header  >
-        <ion-toolbar > 
-         
-          <ion-buttons>
-            
-            <ion-menu-button side="start"></ion-menu-button>
-          </ion-buttons>
-          <ion-title   class="moverletra" color="dark"  >  RECYCLOP</ion-title >         
+    
+        <ion-toolbar >         
+          <ion-buttons>           
+            <ion-menu-button slot="start"></ion-menu-button>
+          </ion-buttons>  
+          <ion-title  class="moverletra" color="dark">RECYCLOP</ion-title >         
         </ion-toolbar>
-         <google-map width="100%" height="80vh" 
-           [center]="miPosicion"
-           [options]="opcionesDeMapa" 
-           [zoom]="zoom"
-           (mapClick)="crearMarca($event)"
-           >
-           <map-marker 
-           *ngFor="let marca of marcas"
-           [position]="marca.posicion"
-           [title]="marca.title"
-           [label]="marca.etiqueta"
-           [options]="marca.opciones"
-           >  
-          
-           </map-marker>
-          </google-map>
-     </ion-header>
-     
-   
-          
+    
 
-           
+     <ion-content>
+      <google-map width="100%" height="100%"
+      [center]="miPosicion"
+      [options]="opcionesDeMapa" 
+      [zoom]="zoom"
+      (mapClick)="crearMarca($event)"
+      >
+      <map-marker 
+      *ngFor="let marca of marcas"
+      [position]="marca.posicion"
       
-      
+      [label]="marca.etiqueta"
+      [options]="marca.opciones"
+       >  
+      asdasd
+      </map-marker>
+     </google-map>
 
-      <!--MENU-->
      
-      
+  
+     </ion-content>
 
        <!--TABS-->
-     <ion-tabs >    
-        <ion-tab-bar slot="bottom" >
-          <ion-tab-button  href="perfil">
-            <ion-icon name="person"color="dark"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button href="main">
-            <ion-icon name="location"color="dark"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button   href="fav">
-            <ion-icon name="star"color="dark"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button  (click)="presentAlertMultipleButtons()" >
-            <ion-icon  name="camera"color="dark"  ></ion-icon>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-       <!--ICONOS-->
-     
-</ion-content>
+
+      

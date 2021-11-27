@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from 'src/app/servicio/datos.service';
-import { IDato } from '../interfaz/IDato';
+import { IDato } from '../../app/dato/interfaz/IDato';
 import { HttpClient } from '@angular/common/http'
 
 @Component({

@@ -1,12 +1,10 @@
-
-
 <ion-content padding class="background" >
-
     <br><br><br><br><br>
+    <!--TITULO-->
     <H1 align="center" class="titulo" > RECYCLOP </H1>
-    
-        <div class="centrar">
-                  
+
+        <!--CARD    -->
+        <div class="centrar">             
              <ion-card >
               
                     <ion-card-content   >
@@ -33,11 +31,9 @@
                                      </ion-col>
                             </ion-row>
                             <ion-row class="moverletra">
-                                 <a href=""> ¿Olvidaste tu contraseña?</a >  
+                                 <a   (click)="presentAlertMultipleButtons()"> ¿Olvidaste tu contraseña?</a >  
                             </ion-row>
-                            
-                    
-    
+                                
                     </ion-card-content>
     
              </ion-card>
@@ -49,7 +45,7 @@
             <ion-row  > 
                 <ion-col  >                         
                                             
-                <ion-button class="boton"  color="dark" shape="round"  expand="block" href="welcome">
+                <ion-button class="boton"  color="dark" shape="round"  expand="block" routerLink="welcome">
                 Iniciar sesión
                 </ion-button>
                 </ion-col>
@@ -66,7 +62,7 @@
              <ion-row  > 
                 <ion-col  >                         
                                             
-                <ion-button class="boton"  color="success" shape="round"  expand="block" href="dato/agregar">
+                <ion-button class="boton"  color="success" shape="round"  expand="block" routerLink="agregar">
                    Registrarse  
                 </ion-button>
                 </ion-col>

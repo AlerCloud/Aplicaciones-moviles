@@ -1,5 +1,11 @@
+import { getCurrencySymbol } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
+
 import { AlertController, MenuController } from "@ionic/angular";
+
+
+
+import { bindCallback } from "rxjs";
 import { __await } from "tslib";
 
 
@@ -18,6 +24,7 @@ import { __await } from "tslib";
     constructor(public alertController: AlertController, private menu: MenuController ){
 
     }
+    
     async presentAlertMultipleButtons() {
        const alert = await this.alertController.create({
          cssClass: 'my-custom-class',
@@ -44,22 +51,26 @@ import { __await } from "tslib";
       
       
 }
+  
   public zoom =18;
   public opcionesDeMapa : google.maps.MapOptions = {
     zoomControl: true,
     scrollwheel: true,
-  
-    maxZoom: 14,
-    minZoom: 2,
+    maxZoom: 18,
+    minZoom: 6,
     clickableIcons: true,
+    
+    
     
 
 
   };
+
   public marcas = [];
   public miPosicion: google.maps.LatLngLiteral = {
     lat:-0, 
     lng:-0,
+    
   };
   ngOnInit(): void {
     window.navigator.geolocation.getCurrentPosition((posicion) =>{
@@ -67,38 +78,48 @@ import { __await } from "tslib";
       this.miPosicion = {
         lat: posicion.coords.latitude,
         lng:posicion.coords.longitude,
+        
+      
       };
 
       this.marcas.push({
         posicion: this.miPosicion,
+        
+        
+        
       });
 
-    });
-       
 
-    
-  
+    });
   }
-   
+ 
+
+  public imagen =
+  "https://img.icons8.com/officel/60/000000/trash.png";
   public crearMarca(evento: google.maps.MapMouseEvent){
     const posicion: google.maps.LatLngLiteral = evento.latLng.toJSON();
     this.marcas.push({
       posicion: posicion,
-      title: "soy un punto Ecologico" + this.marcas.length + 1,
       etiqueta: {
-        color: "blue",
-        text: "Punto Ecologico" + this.marcas.length + 1
+        color: '#247A83',
+        fontSize: '20px',
+        fontWeight: 'bold',
+        letterSpacing: '0.5px',  
+        text: "Punto Ecologico" + this.marcas.length       
       },
-      informacion: "soy informacion" + this.marcas.length + 1,
       opciones: {
-        
-        Animation: google.maps.Animation.BOUNCE
+        icon: this.imagen,
+        Animation: google.maps.Animation.DROP
+              
       }
+
+      
+    
     });
     }
 
-
-
-   }  
+    
+  
+}  
       
     

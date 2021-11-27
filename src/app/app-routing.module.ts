@@ -1,14 +1,16 @@
 import { Component, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CardComponent } from 'src/pages/card/card.component';
-import { LoginComponent } from 'src/pages/login/login.component';
 import { MainComponent } from 'src/pages/main/main.component';
 import { PerfilComponent } from 'src/pages/perfil/perfil.component';
 import { WelcomeComponent } from 'src/pages/welcome/welcome.component';
-import { RegisterComponent } from 'src/pages/register/register.component';
+
 import { FavComponent } from 'src/pages/favorito/fav.component';
 import { Card2Component } from 'src/pages/card2/card2.component';
 import { Card3Component } from 'src/pages/card3/card3.component';
+import { componentFactoryName } from '@angular/compiler';
+import { LoginComponent } from 'src/pages/login/login.component';
+import { AgregarComponent } from 'src/pages/agregar/agregar.component';
 
 
 
@@ -16,10 +18,11 @@ const routes: Routes = [
   {
     path: '',
     component: LoginComponent
+    
   },
   {
-    path: 'register',
-    component: RegisterComponent
+    path: 'agregar',
+    component: AgregarComponent
   },
   {
     path: 'main',
@@ -55,6 +58,9 @@ const routes: Routes = [
     path: 'dato',
     loadChildren: () => import('./dato/dato.module'). then( m => m.DatoModule)
   }
+
+  
+
 
   
 ];
