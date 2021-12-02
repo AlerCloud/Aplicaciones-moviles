@@ -16,15 +16,17 @@
       [zoom]="zoom"
       (mapClick)="crearMarca($event)"
       >
-      <map-marker 
+      <map-marker
+      #markerElem 
       *ngFor="let marca of marcas"
       [position]="marca.posicion"
-      
       [label]="marca.etiqueta"
       [options]="marca.opciones"
+      (mapClick)="openInfo(map-info-window)"
        >  
-      asdasd
+      
       </map-marker>
+      <map-info-window> asda </map-info-window>
      </google-map>
 
      

@@ -1,7 +1,10 @@
 import { getCurrencySymbol } from "@angular/common";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { MapInfoWindow, MapMarker, GoogleMap } from "@angular/google-maps";
 
 import { AlertController, MenuController } from "@ionic/angular";
+
+
 
 
 
@@ -17,11 +20,12 @@ import { __await } from "tslib";
  
 
  export class MainComponent implements OnInit {
-
+  @ViewChild(MapInfoWindow, { static: false }) infoWindow: MapInfoWindow
+  @ViewChild(GoogleMap, { static: false }) map: GoogleMap
  
      
 
-    constructor(public alertController: AlertController, private menu: MenuController ){
+    constructor(public alertController: AlertController, private menu: MenuController){
 
     }
     
@@ -56,16 +60,18 @@ import { __await } from "tslib";
   public opcionesDeMapa : google.maps.MapOptions = {
     zoomControl: true,
     scrollwheel: true,
-    maxZoom: 18,
+    maxZoom: 20,
     minZoom: 6,
     clickableIcons: true,
+    
+    
     
     
     
 
 
   };
-
+  
   public marcas = [];
   public miPosicion: google.maps.LatLngLiteral = {
     lat:-0, 
@@ -95,31 +101,34 @@ import { __await } from "tslib";
  
 
   public imagen =
-  "https://img.icons8.com/officel/60/000000/trash.png";
+  "https://img.icons8.com/officel/40/000000/trash.png";
   public crearMarca(evento: google.maps.MapMouseEvent){
     const posicion: google.maps.LatLngLiteral = evento.latLng.toJSON();
     this.marcas.push({
+      
       posicion: posicion,
       etiqueta: {
         color: '#247A83',
         fontSize: '20px',
         fontWeight: 'bold',
         letterSpacing: '0.5px',  
-        text: "Punto Ecologico" + this.marcas.length       
+        text: "Punto Ecologico" + this.marcas.length  
+           
       },
       opciones: {
         icon: this.imagen,
         Animation: google.maps.Animation.DROP
+        
               
       }
-
       
-    
+      
     });
+     
     }
-
+    
+    
     
   
-}  
-      
-    
+
+} 

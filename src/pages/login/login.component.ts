@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { LoadingController } from "@ionic/angular";
 import { AlertController } from "@ionic/angular";
 import { __await } from "tslib";
+import { DatosService } from "src/app/servicio/datos.service";
 
 @Component({
     selector: 'login',
@@ -9,9 +10,12 @@ import { __await } from "tslib";
     styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{ 
+  public nombre ="";
+  public contrasena ="";
 
 
-    constructor(private loadingCtrl: LoadingController , public alertController: AlertController){}
+
+    constructor(private loadingCtrl: LoadingController , public alertController: AlertController, private auth: DatosService){}
 
     ngOnInit(){
         
@@ -45,5 +49,18 @@ export class LoginComponent implements OnInit{
         await alert.present();
       }
 
-
+      public iniciarSesion(){
+        this.auth.iniciarSesion(this.nombre,this.contrasena)
+        .then( resultado =>{
+          if(resultado){
+            alert("Te damos la bienvenida "+ this.auth.usuarioLogeado.nombre);
+            location.href = "welcome";
+          }
+          else{
+            alert("usuario y contraseña incorrecto, intentelo denuevo.");
+            
+          }
+        }
+          )
+      }
 }

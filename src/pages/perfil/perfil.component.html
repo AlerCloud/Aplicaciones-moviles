@@ -8,43 +8,30 @@
         <ion-title class="letratool" >Perfil</ion-title>
       </ion-toolbar>
 </ion-header> 
-<ion-tabs >    
-  <ion-tab-bar slot="bottom" >
-    <ion-tab-button  href="perfil">
-      <ion-icon name="person"color="dark"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button href="main">
-      <ion-icon name="location"color="dark"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button tab="favoritos">
-      <ion-icon name="star"color="dark"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button tab="camara">
-      <ion-icon name="camera"color="dark"></ion-icon>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
-    <ion-card padding class="background" > 
+
+    <ion-card padding class="background" *ngFor="let dato of asd"  > 
           
        
        <ion-card-header>
-        <img class="circulo"  src="assets/img/avatar.jpg">
+        <img class="circulo"  src="{{ dato.foto }}">
        </ion-card-header>
-          <ion-card-content class="ion-text-center">
-            <h1 >Usuario</h1>
+
+       
+          <ion-card-content class="ion-text-center" >
+            <h1 >{{ dato.nombre }}</h1>
             <ion-text color="dark">
               <div style="display: flex;" class="ion-justify-content-center">
-                <ion-icon name="location-outline" color="dark">
+                <ion-icon name="mail-outline" color="dark">
                 </ion-icon>
-                <p>0681 Calle, Buin, Chile.</p>
+                <p> {{ dato.email }}  </p>
               </div>
             </ion-text>
 
             <ion-text color="dark">
                 <div style="display: flex;" class="ion-justify-content-center">
-                  <ion-icon name="mail-outline" color="dark">
+                  <ion-icon name="star" color="dark">
                   </ion-icon>
-                  <p>usuario@email.com</p>
+                  <p> {{ dato.edad }}</p>
                 </div>
               </ion-text>
 
@@ -52,7 +39,7 @@
                 <div style="display: flex;" class="ion-justify-content-center">
                   <ion-icon name="male-outline" color="dark">
                   </ion-icon>
-                  <p>Masculino</p>
+                  <p> {{ dato.sexo }} </p>
                 </div>
               </ion-text>
           </ion-card-content>

@@ -1,18 +1,14 @@
 {
   "persona": [
+   
     {
-      "nombre": "",
-      "email": "asdasd",
-      "contrasena": "asd",
-      "edad": "",
-      "id": 1
-    },
-    {
-      "nombre": "asda",
-      "email": "asdasd",
-      "contrasena": "asdasd",
-      "edad": 1231,
-      "id": 2
+      "foto": "https://blenderartists.org/uploads/default/original/4X/9/1/b/91b72fff1cd797aecc2ab041c36fc5f3ad5ac413.jpeg",
+      "nombre": "Alvaro Uribe",
+      "email": "cstrife96@hotmail.com",
+      "contrasena": "1234",
+      "edad": 32,
+      "sexo": "Masculino",
+      "id": 5
     }
   ]
 }

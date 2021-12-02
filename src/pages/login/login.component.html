@@ -14,7 +14,7 @@
                                 <ion-icon name="person" > </ion-icon>
                                 Nombre de usuario:
                             </ion-label>
-                            <ion-input type="text"  ></ion-input>
+                            <ion-input type="text" name="Nombre" [(ngModel)]="nombre"  ></ion-input>
                         </ion-item>
                                         
                             </ion-row>
@@ -26,7 +26,7 @@
                                                 <ion-icon name="medical" > </ion-icon>
                                                 Contraseña:
                                             </ion-label>
-                                            <ion-input type="password" ></ion-input>
+                                            <ion-input type="password" name ="contrasena"  [(ngModel)]="contrasena"  ></ion-input>
                                         </ion-item>
                                      </ion-col>
                             </ion-row>
@@ -45,7 +45,7 @@
             <ion-row  > 
                 <ion-col  >                         
                                             
-                <ion-button class="boton"  color="dark" shape="round"  expand="block" routerLink="welcome">
+                <ion-button  (click)="iniciarSesion()"       class="boton"  color="secondary" shape="round"  expand="block"   >
                 Iniciar sesión
                 </ion-button>
                 </ion-col>

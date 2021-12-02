@@ -1,12 +1,12 @@
 <ion-menu  side="start" menuId="main-menu" contentId="main">
 
-  <ion-content>
+  <ion-content  *ngFor="let dato of asd" >
     <div class="menu-header-bg"></div>
     <div class="header-content" >
-      <img src="assets/img/avatar.jpg" > 
+      <img src="{{ dato.foto }}" > 
       <ion-label>
-        <h2>Usuario</h2>
-        <p>usuario.mail@email.com</p>
+        <h2> {{ dato.nombre }} </h2>
+        <p>{{ dato.email }} </p>
       </ion-label>
     </div>
     <ion-menu-toggle  auto-hide="true" >

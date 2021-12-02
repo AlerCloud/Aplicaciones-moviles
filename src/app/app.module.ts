@@ -19,6 +19,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
 
 import { LoginComponent } from 'src/pages/login/login.component';
 import { AgregarComponent } from 'src/pages/agregar/agregar.component';
+import { DatosService } from './servicio/datos.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { AgregarComponent } from 'src/pages/agregar/agregar.component';
   exports: [MenuComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,FormsModule, ReactiveFormsModule,
             GoogleMapsModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [ DatosService, {  provide:  RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

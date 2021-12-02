@@ -10,10 +10,12 @@ import { HttpClient } from '@angular/common/http'
 })
 export class AgregarComponent implements OnInit {
   public dato: IDato = {
+    foto: '',
     nombre: '',
     email: '',
     contrasena: '',
-    edad:''
+    edad:'',
+    sexo: "Masculino",
 
   }
   private servicio: DatosService

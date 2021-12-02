@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { DatosService } from "src/app/servicio/datos.service";
 
  @Component({
      selector: 'welcome',
@@ -6,6 +7,12 @@ import { Component } from "@angular/core";
      styleUrls: ['./welcome.component.css' ]
  })
 
- export class WelcomeComponent {
+ export class WelcomeComponent implements OnInit {
+     name: string;
+
+     ngOnInit(){
+        
+     }
+     
      
  }

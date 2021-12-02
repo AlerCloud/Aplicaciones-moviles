@@ -8,11 +8,23 @@
                     
                      <ion-card-content (ngSubmit)= "agregarDato()" >
                          <ion-grid>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                               Foto de perfil:
+                                        </ion-label>
+                                        <ion-input  type="url" required [(ngModel)]="dato.foto"ngDefaultControl ></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
                              <ion-row>
                                  <ion-col>
                                      <ion-item>
+                                         
                                          <ion-label position="floating">
-                                             Ingrese su usuario
+                                            Nombre de usuario:
                                          </ion-label>
                                          <ion-input  type="text" required [(ngModel)]="dato.nombre"ngDefaultControl ></ion-input>
                                      </ion-item>
@@ -22,7 +34,7 @@
                                  <ion-col>
                                      <ion-item>
                                          <ion-label position="floating">
-                                                Email
+                                                Email:
                                          </ion-label>
                                          <ion-input  type="email" required [(ngModel)]="dato.email"ngDefaultControl ></ion-input>
                                      </ion-item>
@@ -32,7 +44,7 @@
                                  <ion-col>
                                      <ion-item>
                                          <ion-label position="floating">
-                                             Ingrese su contraseña
+                                             Ingrese su contraseña:
                                          </ion-label>
                                          <ion-input type="password" required [(ngModel)]="dato.contrasena" ngDefaultControl></ion-input>
                                      </ion-item>
@@ -42,12 +54,25 @@
                               <ion-col>
                                   <ion-item>
                                       <ion-label position="floating">
-                                          edad
+                                          Edad:
                                       </ion-label>
                                       <ion-input type="number" required [(ngModel)]="dato.edad" ngDefaultControl></ion-input>
                                   </ion-item>
                               </ion-col>
                           </ion-row>
+                          <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">
+                                           Sexo:
+                                    </ion-label>
+                                    <ion-select name="sexo" [(ngModel)]="dato.sexo" >
+                                    <ion-select-option  value="Masculino" > Masculino </ion-select-option>
+                                    <ion-select-option  value="Femenino" > Femenino </ion-select-option>
+                                </ion-select>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
                           
                             
                              <ion-row>

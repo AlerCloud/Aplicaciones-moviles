@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http'
 import { IDato } from '../dato/interfaz/IDato';
 import { Observable } from 'rxjs';
-import { ReturnStatement } from '@angular/compiler';
+import { identifierModuleUrl, ReturnStatement } from '@angular/compiler';
+import { promise } from 'selenium-webdriver';
 
 
 
@@ -11,12 +12,13 @@ import { ReturnStatement } from '@angular/compiler';
 })
 export class DatosService {
   url: string = "http://localhost:3000/persona";
+  public usuarioLogeado:IDato;
    private client: HttpClient;
    constructor(moduloHttp: HttpClient) {
      this.client = moduloHttp;
    }
  
-   public ListarDatos(): Observable<Array<IDato>> {
+   public ListarDatos( ): Observable<Array<IDato>> {
      return this.client.get<Array<IDato>>(this.url);
    }
  
@@ -40,6 +42,32 @@ export class DatosService {
  
 
  });
+
+ 
  
  }
+ public async iniciarSesion(nombre:string, contrasena: string): Promise<boolean>{
+   let retorno = false;
+   const resultado = await 
+   this.client.get<Array<IDato>>(`http://localhost:3000/persona?nombre=${nombre}&contrasena=${contrasena}`)
+   .toPromise();
+
+    if(resultado.length === 0){
+     return false;
+    }
+    else{
+      this.usuarioLogeado = resultado[0];
+      return true;
+    }
+  return retorno;
+ }
+
+
+
+
+
+
+
+
+
 }
