@@ -1,24 +1,25 @@
-<ion-content padding class="background" >
-    <br><br><br><br><br>
+<ion-content class="background" >
+    <br>
     <!--TITULO-->
-    <H1 align="center" class="titulo" > RECYCLOP </H1>
-
+    <img src="assets\img\RECYCLOP.png">
+    
         <!--CARD    -->
         <div class="centrar">             
-             <ion-card >
+             <ion-card class="colorcard" >
               
                     <ion-card-content   >
+                       
                         <ion-row  > 
-                        <ion-item  >
+                        <ion-item >
                             <ion-label position="floating" >
-                                <ion-icon name="person" > </ion-icon>
-                                Nombre de usuario:
+                                <ion-icon name="person"  > </ion-icon>
+                                Nombre de usuario: 
                             </ion-label>
-                            <ion-input type="text" name="Nombre" [(ngModel)]="nombre"  ></ion-input>
+                            <ion-input  type="text" name="Nombre" [(ngModel)]="nombre"  ></ion-input>
                         </ion-item>
                                         
                             </ion-row>
-                            <ion-row>
+                            <ion-row >
                                      <ion-col>
     
                                         <ion-item>
@@ -45,7 +46,7 @@
             <ion-row  > 
                 <ion-col  >                         
                                             
-                <ion-button  (click)="iniciarSesion()"       class="boton"  color="secondary" shape="round"  expand="block"   >
+                <ion-button routerLink="welcome"    class="boton"  color="secondary" shape="round"  expand="block"  >
                 Iniciar sesión
                 </ion-button>
                 </ion-col>

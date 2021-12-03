@@ -1,13 +1,7 @@
 import { getCurrencySymbol } from "@angular/common";
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { MapInfoWindow, MapMarker, GoogleMap } from "@angular/google-maps";
-
 import { AlertController, MenuController } from "@ionic/angular";
-
-
-
-
-
 import { bindCallback } from "rxjs";
 import { __await } from "tslib";
 
@@ -20,8 +14,9 @@ import { __await } from "tslib";
  
 
  export class MainComponent implements OnInit {
-  @ViewChild(MapInfoWindow, { static: false }) infoWindow: MapInfoWindow
-  @ViewChild(GoogleMap, { static: false }) map: GoogleMap
+  map = null;
+
+  
  
      
 
@@ -64,13 +59,9 @@ import { __await } from "tslib";
     minZoom: 6,
     clickableIcons: true,
     
-    
-    
-    
-    
-
-
+  
   };
+  
   
   public marcas = [];
   public miPosicion: google.maps.LatLngLiteral = {
@@ -112,7 +103,7 @@ import { __await } from "tslib";
         fontSize: '20px',
         fontWeight: 'bold',
         letterSpacing: '0.5px',  
-        text: "Punto Ecologico" + this.marcas.length  
+        //text: "Punto Ecologico" + this.marcas.length  
            
       },
       opciones: {
@@ -123,12 +114,12 @@ import { __await } from "tslib";
       }
       
       
+      
     });
      
     }
     
-    
-    
   
+ 
 
 } 

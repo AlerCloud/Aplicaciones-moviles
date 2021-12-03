@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Recyclop",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -15,7 +15,9 @@ import { Card3Component } from 'src/pages/card3/card3.component';
 import { WelcomeComponent } from 'src/pages/welcome/welcome.component';
 import { FavComponent } from 'src/pages/favorito/fav.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+ 
+
 
 import { LoginComponent } from 'src/pages/login/login.component';
 import { AgregarComponent } from 'src/pages/agregar/agregar.component';
@@ -29,8 +31,8 @@ import { DatosService } from './servicio/datos.service';
   entryComponents: [],
   exports: [MenuComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,FormsModule, ReactiveFormsModule,
-            GoogleMapsModule],
-  providers: [ DatosService, {  provide:  RouteReuseStrategy, useClass: IonicRouteStrategy }],
+            GoogleMapsModule,],
+  providers: [ DatosService, {  provide:  RouteReuseStrategy, useClass: IonicRouteStrategy,  }  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -20,7 +20,7 @@ ion-card{
     border-radius: 50%;
 }
 .background{
-    --background: url(/assets/img/fondoavatar.jpg) 0 0/100% 100% no-repeat;
+    --background: url(/assets/img/fondo_caja.png) 0 0/100% 100% no-repeat;
 }
 ion-tab-bar{
     --background: #7ED2D5 ;

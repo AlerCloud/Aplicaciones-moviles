@@ -18,28 +18,34 @@
 
        
           <ion-card-content class="ion-text-center" >
-            <h1 >{{ dato.nombre }}</h1>
+            <h1 >{{ dato.nombre }} </h1>
             <ion-text color="dark">
               <div style="display: flex;" class="ion-justify-content-center">
-                <ion-icon name="mail-outline" color="dark">
+                <ion-icon name="mail-unread" color="dark">
                 </ion-icon>
-                <p> {{ dato.email }}  </p>
+                <h2>
+                  {{ dato.email }} 
+                </h2>
               </div>
             </ion-text>
 
             <ion-text color="dark">
                 <div style="display: flex;" class="ion-justify-content-center">
-                  <ion-icon name="star" color="dark">
+                  <ion-icon name="balloon-outline" color="dark">
                   </ion-icon>
-                  <p> {{ dato.edad }}</p>
+                  <h2>
+                    {{ dato.edad }}
+                  </h2>
                 </div>
               </ion-text>
 
               <ion-text color="dark">
                 <div style="display: flex;" class="ion-justify-content-center">
-                  <ion-icon name="male-outline" color="dark">
+                  <ion-icon name="male-female-outline" color="dark">
                   </ion-icon>
-                  <p> {{ dato.sexo }} </p>
+                  <h2>
+                    {{ dato.sexo }}
+                  </h2>
                 </div>
               </ion-text>
           </ion-card-content>

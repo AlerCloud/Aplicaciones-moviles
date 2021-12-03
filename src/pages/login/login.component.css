@@ -24,19 +24,17 @@
 
 }
 
-.background{
-    --background: url(src/assets/img/fondo2.jpg) 0 0/100% 100% no-repeat;
+ion-content.background{
+    --background: url(src\assets\img\fondo_caja.png) 0 0/100% 100% no-repeat;
+
 }
 
 .colorcard{
-    background-color:#96C0C6  ;
-    box-shadow: none;
+    background-color:#56c0e0a6  ;
+   
 }
 .titulo{
-    font-size: 64px;
-    font-family: fantasy;
-    color:#7ED2D5 ;
-    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    --background: url(src\assets\img\RECYCLOP.png) 0 0/100% 100% no-repeat;
     
 }
 
@@ -45,4 +43,7 @@
     top: 50%;
     left: 50%;
    
+}
+img{
+    text-align: center;
 }

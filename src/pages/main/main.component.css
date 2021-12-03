@@ -3,7 +3,9 @@
 }
 
 ion-toolbar{
-  --background: #1bb9ca 0%;
+  --background: #0c8391 100%;
+  -webkit-padding-end: 29%;
+  
   
 }
 
@@ -34,4 +36,8 @@ ion-tab-bar{
 }
 map-marker{
   color:rgb(98, 49, 231);
+}
+img{
+  height: 100%;
+  width: 120px;
 }

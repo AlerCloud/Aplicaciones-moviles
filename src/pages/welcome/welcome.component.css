@@ -43,3 +43,9 @@ p{      padding: 10px;
         text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
         
     }
+
+.moverfoto{
+        transform: translateX(1%) translateY(-80%);
+        top: 50%;
+        left: 50%;
+      }
