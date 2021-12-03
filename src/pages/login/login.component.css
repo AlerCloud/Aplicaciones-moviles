@@ -30,7 +30,7 @@ ion-content.background{
 }
 
 .colorcard{
-    background-color:#56c0e0a6  ;
+    background-color:#cee287a6  ;
    
 }
 .titulo{
@@ -47,3 +47,7 @@ ion-content.background{
 img{
     text-align: center;
 }
+
+ion-item{
+    --ion-background-color:#cee287a6;
+ }

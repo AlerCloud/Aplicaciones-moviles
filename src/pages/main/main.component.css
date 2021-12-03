@@ -41,3 +41,33 @@ img{
   height: 100%;
   width: 120px;
 }
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+ion-slides {
+  height: 249px;
+  position: absolute;
+  bottom: 0px;
+  width: 92%;
+  
+}
+
+.imgcard{
+  height: 150px;
+  width: 250px;
+  align-items: center;
+  align-content: center;
+}
+
+ion-card{
+  background: rgba(119, 185, 211, 0.5);
+}
+h2{
+  font-style: inherit;
+  font-family: fantasy;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  color: rgb(108, 226, 181);
+}

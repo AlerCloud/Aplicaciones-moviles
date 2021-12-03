@@ -1,8 +1,3 @@
-
-   
-   
-   
-   
    <!--TOOLBAR-->
    
         <ion-toolbar >         
@@ -13,32 +8,37 @@
             <img  src="assets\img\RECYCLOPICONO.png">
           </ion-title >         
         </ion-toolbar>
+
+        <ion-fab horizontal="end" vertical="top" slot="fixed">
+    <ion-fab-button color="secondary" href="main" >
+      <ion-icon name="location-outline"></ion-icon>
+      
+    </ion-fab-button>
+  </ion-fab>
     
 
-     <ion-content>
-      <google-map width="100%" height="100%"
-      [center]="miPosicion"
-      [options]="opcionesDeMapa" 
-      [zoom]="zoom"
-      (mapClick)="crearMarca($event)"
-      >
-      <map-marker
-      #markerElem 
-      *ngFor="let marca of marcas"
-      [position]="marca.posicion"
-      [label]="marca.etiqueta"
-      [options]="marca.opciones"
-      (mapClick)="openInfo(map-info-window)"
-       >  
-      
-      </map-marker>
-      <map-info-window> asda </map-info-window>
-     </google-map>
-
-     
+   <ion-content>
+  <div id="map">
+</div>
+  <ion-slides  (ionSlideDidChange)="onSlideDidChange()" >
+    <ion-slide *ngFor="let marker of markers">
+      <ion-card>
+        <ion-card-content>
+         <ion-card-header class="imgcard" >
+            <img class="imgcard" [src]="marker.image">
+          </ion-card-header>
+          <ion-label class="ion-text-wrap">
+            <h2>{{ marker.title }}</h2>
+            <p>{{ marker.text }}</p>
+          </ion-label>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
   
-     </ion-content>
 
-       <!--TABS-->
+
+</ion-content>
+
 
       
