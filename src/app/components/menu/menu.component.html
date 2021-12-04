@@ -46,18 +46,31 @@
         <ion-label class="moverletra" >Uso de datos moviles</ion-label>
         <ion-toggle style="object-position: right;"></ion-toggle>
       </ion-item>
-      <ion-item class="active" >              
-        <ion-label>Condiciones de uso</ion-label>              
+      <ion-item class="active" > 
+                  
+        <a (click)="presentAlertMultipleButtons2()">Condiciones de Uso</a>           
       </ion-item>
-      <ion-item>              
-        <ion-label id="pad">Restricciones de ubicacion</ion-label>              
+
+      <ion-item class="active" >                
+        <a (click)="presentAlertMultipleButtons()">Restricciones de Ubicación</a>           
       </ion-item>
+
+      <ion-item class="active" >                
+        <a (click)="presentAlertMultipleButtons3()">Solicitar puntos de reciclaje</a>           
+      </ion-item>
+
       <ion-item>              
         <ion-label id="pad">Eliminar cuenta</ion-label> 
         <ion-icon name="trash" style="object-position: right;"></ion-icon>     
         
        
       </ion-item>
+
+      <ion-item>              
+        <ion-label id="pad">Eliminar cuenta</ion-label> 
+        <ion-icon name="trash" style="object-position: right;"></ion-icon>          
+      </ion-item>
+
       <ion-menu-toggle  auto-hide="true" >
       <ion-item style="object-position: right;">
         <ion-label >Cerrar Sesión</ion-label>

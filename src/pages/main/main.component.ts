@@ -194,6 +194,7 @@ interface YO {
       image: 'https://2.bp.blogspot.com/-0LQVBBA_OXM/VzTz5fIWsDI/AAAAAAAAARA/uFdw-Zof81o3LQUI7v_RfjYqONYcYe53gCLcB/w1200-h630-p-k-no-nu/pilas-baterias-foto-blog.jpg',
       text: 'Camino los Tilos 491, Buin'
     },
+    //San Bernardo
     {
       lat: -33.668557,
       lng:  -70.739400,
@@ -208,6 +209,62 @@ interface YO {
       image: 'https://www.cualestuhuella.cl/files/6000797fd9f07_890x533.jpg',
       text: 'Calle Mendoza 785 , San Bernardo'
     },
+    {
+      lat: -33.639980,
+      lng:   -70.692139,
+      title: 'Punto Verde: Vidrio',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
+      text: 'Camino Los Morros 1480, San Bernardo'
+    },
+    {
+      lat: -33.629303,
+      lng:  -70.713295,
+      title: 'Punto Verde: Vidrio',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
+      text: 'Jorge Alessandri con ruta 6 20226, San Bernardo'
+    },
+
+    {
+      lat: -33.602454,
+      lng:   -70.704349,
+      title: 'Punto Verde: Vidrio',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
+      text: 'Nogales 333, San Bernardo'
+    },
+
+    {
+      lat: -33.598597,
+      lng:   -70.695698,
+      title: 'Punto Verde: Vidrio',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
+      text: 'Arturo Dagnino 159, San Bernardo'
+    },
+
+    {
+      lat: -33.596327,
+      lng:  -70.705155,
+      title: 'Punto Verde: Vidrio',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
+      text: 'San José, San Bernardo'
+    },
+
+    {
+      lat: -33.592954,
+      lng:  -70.704076,
+      title: 'Punto Verde: Vidrio',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
+      text: 'Arturo Prat 442-522, San Bernardo'
+    },
+
+    {
+      lat: -33.595353,
+      lng:  -70.701211,
+      title: 'Punto Verde: Vidrio, Papel, Cartón, Plástico',
+      image: 'https://www.cualestuhuella.cl/files/6000797fd9f07_890x533.jpg',
+      text: 'Calle Condell 330, San Bernardo'
+    },
+
+
   ]
 
 } 
