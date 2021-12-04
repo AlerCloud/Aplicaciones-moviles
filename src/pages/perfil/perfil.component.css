@@ -1,9 +1,4 @@
 
-.imagen{
-    height: 160px;
-    width: 150px;
-}
-
 ion-toolbar{
     --background: #048daf 100% ;
     
@@ -32,4 +27,18 @@ ion-tab-bar{
     color:#f0f0f0 ;
     text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
     
+}
+
+h1{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family:monospace;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+
+}
+
+h2{
+    font-size: 20px;
+    color: #000000;
+
 }

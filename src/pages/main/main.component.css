@@ -56,18 +56,18 @@ ion-slides {
 }
 
 .imgcard{
-  height: 150px;
-  width: 250px;
-  align-items: center;
-  align-content: center;
+  height: 115px;
+  width: 210px;
+  border-radius: 10%;
+
 }
 
 ion-card{
-  background: rgba(119, 185, 211, 0.5);
+  background: rgba(130, 212, 241, 0.5);
 }
 h2{
-  font-style: inherit;
-  font-family: fantasy;
+  font-style:inherit;
+  font-family:monospace;
   text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-  color: rgb(108, 226, 181);
+  color: rgb(110, 238, 189);
 }

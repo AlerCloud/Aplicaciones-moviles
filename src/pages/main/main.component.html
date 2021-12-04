@@ -1,31 +1,31 @@
    <!--TOOLBAR-->
    
-        <ion-toolbar >         
-          <ion-buttons>           
-            <ion-menu-button slot="start"></ion-menu-button>
-          </ion-buttons>  
-          <ion-title slot="secondary" >
-            <img  src="assets\img\RECYCLOPICONO.png">
-          </ion-title >         
-        </ion-toolbar>
+    <ion-toolbar >         
+      <ion-buttons>           
+        <ion-menu-button slot="start"></ion-menu-button>
+        </ion-buttons>  
+        <ion-title slot="secondary" >
+          <img  src="assets\img\RECYCLOPICONO.png">
+        </ion-title >         
+    </ion-toolbar>
 
-        <ion-fab horizontal="end" vertical="top" slot="fixed">
+    <ion-fab horizontal="end" vertical="top" slot="fixed">
     <ion-fab-button color="secondary" href="main" >
-      <ion-icon name="location-outline"></ion-icon>
+    <ion-icon name="location-outline"></ion-icon>
       
     </ion-fab-button>
   </ion-fab>
     
 
-   <ion-content>
-  <div id="map">
+<ion-content>
+ <div id="map">
 </div>
-  <ion-slides  (ionSlideDidChange)="onSlideDidChange()" >
+  <ion-slides (ionSlideDidChange)="onSlideDidChange()">
     <ion-slide *ngFor="let marker of markers">
       <ion-card>
         <ion-card-content>
-         <ion-card-header class="imgcard" >
-            <img class="imgcard" [src]="marker.image">
+         <ion-card-header >
+            <img class="imgcard" align="center" [src]="marker.image">
           </ion-card-header>
           <ion-label class="ion-text-wrap">
             <h2>{{ marker.title }}</h2>
@@ -35,9 +35,6 @@
       </ion-card>
     </ion-slide>
   </ion-slides>
-  
-
-
 </ion-content>
 
 

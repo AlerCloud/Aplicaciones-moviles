@@ -79,7 +79,7 @@ interface YO {
       const mapEle: HTMLElement = document.getElementById('map');
       this.mapRef = new google.maps.Map(mapEle, {
         center: this.miPosicion,
-        zoom: 15,
+        zoom: 13,
         marcador: this.markers
         
       });
@@ -142,70 +142,70 @@ interface YO {
       lat: -33.732156,
       lng:  -70.748670,
       title: 'Punto verde: Vidrio',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipOCgzq_0DYB9AxD-ItTG01x2csLsSfWsawBCypc=w408-h306-k-no',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
       text: 'Av.Bernardo OHiggins, Buin.'
     },
     {
       lat: -33.725903,
       lng: -70.745371,
       title: 'Punto Verde: Vidrio',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
       text: 'Manuel PL. 728, Buin'
     },
     {
       lat: -33.729252,
       lng:  -70.739437,
       title: 'Punto Verde: Vidrio',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
       text: 'Manuel Rodríguez 288, Buin'
     },
     {
       lat: -33.728092,
       lng: -70.736867,
       title: 'Punto Verde: Vidrio, Plástico, Metal',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'https://www.cualestuhuella.cl/files/6000797fd9f07_890x533.jpg',
       text: ' Alcalde Alberto Kumm 24, Buin'
     },
     {
       lat: -33.729723,
       lng:   -70.738285,
       title: 'Punto Verde: Vidrio',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
       text: 'Aníbal Pinto 17, Buin'
     },
     {
       lat: -33.733256,
       lng:  -70.729658,
       title: 'Punto Verde: Vidrio',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
       text: 'Cno Estación , Buin'
     },
     {
       lat: -33.711221,
       lng:   -70.743504,
       title: 'Punto Verde: Vidrio',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'http://www.ladiscusion.cl/wp-content/uploads/2021/01/reciclaje-e1609584326170.jpg',
       text: 'Nuestra Ilusión , Buin'
     },
     {
       lat: -33.713566,
       lng:  -70.721907,
       title: 'Punto Verde: Pila, Celular',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'https://2.bp.blogspot.com/-0LQVBBA_OXM/VzTz5fIWsDI/AAAAAAAAARA/uFdw-Zof81o3LQUI7v_RfjYqONYcYe53gCLcB/w1200-h630-p-k-no-nu/pilas-baterias-foto-blog.jpg',
       text: 'Camino los Tilos 491, Buin'
     },
     {
       lat: -33.668557,
       lng:  -70.739400,
       title: 'Punto Verde: Pila, Celular',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      image: 'https://2.bp.blogspot.com/-0LQVBBA_OXM/VzTz5fIWsDI/AAAAAAAAARA/uFdw-Zof81o3LQUI7v_RfjYqONYcYe53gCLcB/w1200-h630-p-k-no-nu/pilas-baterias-foto-blog.jpg',
       text: 'Eliodoro Yález 1900 , San Bernardo'
     },
     {
       lat: -33.648480,
       lng:  -70.723834,
-      title: 'Punto Verde: Vidrio, Papel, Cartón, Plástico',
-      image: 'https://lh5.googleusercontent.com/p/AF1QipMGZeu88O8uZvFOX9PKug7gz-VRhhiXQ78hAFZU=w408-h306-k-no',
+      title: 'Punto Verde: Papel, Cartón, Plástico',
+      image: 'https://www.cualestuhuella.cl/files/6000797fd9f07_890x533.jpg',
       text: 'Calle Mendoza 785 , San Bernardo'
     },
   ]
